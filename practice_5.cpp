@@ -20,6 +20,16 @@ int main() {
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "d = " << d << endl;
+	cout << sizeof(short) << endl;
+    cout << sizeof(int) << endl;
+    cout << sizeof(long) << endl;
+    cout << sizeof(long long) << endl;
+    cout << sizeof(a) << endl;
+    cout << sizeof(b) << endl;
+    cout << sizeof(c) << endl;
+    cout << sizeof(d) << endl;
+    //sizeof 统计字节数，不论是函数还是变量都行
 
 	return 0;
+
 }
