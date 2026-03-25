@@ -3,11 +3,20 @@ using namespace std;
 
 /*
 +
+
+<<
+
+Complex c;
+cout.operator<<(c)
+
+// 成员函数
+c.operator<<(cout)
 */
 // 复数类
 class Complex {
 	friend Complex operator+(Complex& a, Complex& b);
 	friend Complex operator-(Complex& a, Complex& b);
+	friend ostream& operator<<(ostream& c, Complex a);
 public:
 	Complex() : real(0), image(0) {
 
@@ -45,6 +54,11 @@ Complex operator-(Complex& a, Complex& b) {
 	return ret;
 }
 
+ostream& operator<<(ostream& c, Complex a) {
+	cout << a.real << '+' << a.image << 'i';
+	return cout;
+}
+
 int main() {
 	Complex a(10, 20);
 	Complex b(5, 8);
@@ -53,5 +67,7 @@ int main() {
 	Complex d = a - b;
 	c.Print();
 	d.Print();
+	// operator<<(cout, c)
+	cout << c << endl << endl;
 	return 0;
 }
