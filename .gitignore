@@ -1,0 +1,8 @@
+# Visual Studio 临时文件
+.vs/
+*.ipch
+*.sdf
+*.suo
+Debug/
+Release/
+x64/
