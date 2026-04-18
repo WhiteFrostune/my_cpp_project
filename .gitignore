@@ -1,0 +1,32 @@
+## 1. 忽略 Visual Studio 编译生成的文件
+# 编译输出目录
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# 链接器数据库
+*.ipdb
+*.iobj
+
+# 程序数据库 (调试符号)
+*.pdb
+*.ilk
+
+## 2. 忽略 Visual Studio 用户特定文件
+# 用户设置
+.vs/
+*.user
+*.suo
+*.VC.opendb
+
+## 3. 保留核心源代码和工程结构
+# 默认不忽略 .cpp 和 .h
+# 默认不忽略 .sln (解决方案) 和 .vcxproj (项目文件)
+# 这些会自动传上去，不用写规则
+
+## 4. 忽略系统垃圾
+Thumbs.db
+Desktop.ini
